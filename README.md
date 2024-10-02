@@ -3,3 +3,6 @@ This project is a simple OTP verification screen built with React.js. It include
 
 This project consists of two main components: the client and the server. You can find the respective README files for more detailed information on each component:
 
+1. https://github.com/hafizhamzaali99/otp-verification/blob/master/client/README.md
+2. https://github.com/hafizhamzaali99/otp-verification/blob/master/server/README.md
+
