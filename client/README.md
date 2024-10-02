@@ -14,8 +14,7 @@ Ensure that you have the following installed on your system:
 * Clone the repository to your local machine:
 
   - `git clone https://github.com/hafizhamzaali99/otp-verification.git`
-  - cd otp-verification
-  - cd client
+  - cd path/to/otp-verification/client
 
 * Install the required dependencies:
 
