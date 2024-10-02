@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  background-color: #F6F5F7;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.otpContainer {
+  background-color: #FFFFFF;
+  height: 600px;
+  width: 700px;
+  box-shadow: 0px 3px 30px #0000001F;
+  border-radius: 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.otpHead {
+  background: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Poppins-Bold";
+}
+
+.otpInputContainer {
+  margin-top: 30px
+}
+
+.otpInput {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 5px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  outline: none;
+}
+
+.otpInput:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.otpInput:hover {
+  border-color: #888;
+}
+
+.otpText {
+  font-family: "Poppins-SemiBold";
+  text-align: left;
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+
+.errorText {
+  color: red;
+  text-align: left;
+}
+
+span {
+  font-weight: bold;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins-Bold';
+  font-size: 16px;
+}
+
+.btn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+  background-image: linear-gradient(to right, #d3d3d3 0%, #f0f0f0 51%, #d3d3d3 100%);
+  color: #000;
+}
+
+.lottie {
+  height: 400;
+  width: 400
+}
+
+@media (max-width: 768px) {
+  .otpContainer {
+    height: 500px;
+    width: 500px;
+    padding: 0px 10px;
+  }
+
+  .container {
+    padding: 0px 10px;
+  }
+}
+
+@media (max-width: 370px) {
+  .otpContainer {
+    height: 500px;
+    width: 500px;
+    padding: 0px 10px;
+  }
+
+  .otpHead {
+    background: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Poppins-Bold";
+    text-align: center;
+  }
+
+  .otpInput {
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .resendText {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .otpText {
+    text-align: left;
+    letter-spacing: 0px;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  .lottie {
+    height: 300;
+    width: 300
+  }
+}
